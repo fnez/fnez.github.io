@@ -3,6 +3,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.4em;
   margin: 0;
+  background-color: #faf9f6;
   color: #1b1a1a;
   line-height: 1.8;
 }
@@ -80,8 +81,8 @@ body .sideNav nav.menuItems {
   justify-content: space-around;
   transition: 0.3s;
   width: 100%;
-  align-items: center;
   white-space: nowrap;
+  margin-left: 36px;
 }
 body .sideNav nav.menuItems.closeMenuItems {
   opacity: 0;
@@ -89,7 +90,7 @@ body .sideNav nav.menuItems.closeMenuItems {
 body .sideNav nav.menuItems a {
   padding: 0;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #faf9f6;
   transition: 0.3s;
   list-style-type: none;
@@ -97,6 +98,12 @@ body .sideNav nav.menuItems a {
 }
 body .sideNav nav.menuItems a:hover {
   color: #eb5a49;
+}
+body .sideNav nav.menuItems a:active {
+  color: #eb5a49;
+}
+body .sideNav nav.menuItems a i {
+  margin-right: 12px;
 }
 body .sectionsContainer {
   transition: 0.5s;
@@ -107,12 +114,23 @@ body .sectionsContainer {
 body .sectionsContainer.expanded {
   margin-left: 100px;
 }
+body .sectionsContainer .linksContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .sectionsContainer .linksContainer a {
+  padding: 12px;
+}
+body .sectionsContainer .linksContainer a i {
+  color: #eb5a49;
+  font-size: 40px;
+}
 body .sectionsContainer .section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 100px 0;
+  margin: 52px 0;
 }
 body .sectionsContainer .section.about .intro {
   display: flex;
@@ -133,7 +151,7 @@ body .sectionsContainer .section.about .info {
 body .sectionsContainer .section.work .projectContainer .project {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
+  margin: 60px 0;
 }
 body .sectionsContainer .section.work .projectContainer .project .projectInfo {
   max-width: 30%;
@@ -162,23 +180,26 @@ body .sectionsContainer .section.work .projectContainer .project .projectImg img
 body .sectionsContainer .section.skills {
   flex-direction: column;
 }
-body .sectionsContainer .section.skills .skillsItemsContainer {
-  display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  grid-template-rows: 150px 150px 150px 150px;
-  grid-gap: 1rem;
+body .sectionsContainer .section.skills .skillsContainer {
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
-}
-body .sectionsContainer .section.skills .skillsItemsContainer img {
-  max-width: 200px;
-  height: 100px;
-}
-body .sectionsContainer .section.contact {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  max-width: 1048px;
 }
-body .sectionsContainer .section.contact button {
+body .sectionsContainer .section.skills .skillsContainer .skillsRow {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 36px 0;
+  align-self: center;
+  justify-content: space-between;
+}
+body .sectionsContainer .section.skills .skillsContainer .skillsRow img {
+  max-width: 128px;
+}
+body .sectionsContainer .section.resume button {
   background-color: #1b1a1a;
   color: #faf9f6;
   padding: 14px;
@@ -191,4 +212,76 @@ body .sectionsContainer .section.contact button {
 }
 body .sectionsContainer .accentColor {
   color: #eb5a49;
+}
+body .footerNav {
+  display: none;
+}
+body .footerNav nav a {
+  color: #faf9f6;
+}
+@media (max-width: 961px) {
+  body .sideNav {
+    display: none;
+  }
+  body .mainContainer {
+    display: block;
+    margin-bottom: 164px;
+  }
+  body .sectionsContainer {
+    margin: 0;
+  }
+  body .sectionsContainer.expanded {
+    margin: 0 auto;
+  }
+  body .sectionsContainer .section.work .projectContainer .project {
+    flex-direction: column-reverse;
+  }
+  body .sectionsContainer .section.work .projectContainer .project .projectInfo,
+  body .sectionsContainer .section.work .projectContainer .project .projectImg {
+    max-width: 100%;
+  }
+  body .sectionsContainer .section.work .projectContainer .project .projectInfo img.iphone,
+  body .sectionsContainer .section.work .projectContainer .project .projectImg img.iphone {
+    max-width: 300px;
+  }
+  body .footerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1a1a;
+    height: 128px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  body .footerNav nav.menuItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .footerNav nav.menuItems a {
+    padding: 0;
+    text-decoration: none;
+    color: #faf9f6;
+    transition: 0.3s;
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  body .footerNav nav.menuItems a i {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  body .footerNav nav.menuItems a:hover {
+    color: #eb5a49;
+  }
+  body .footerNav nav.menuItems a:active {
+    color: #eb5a49;
+  }
+}
+@media (max-width: 667px) {
 }

@@ -14,6 +14,14 @@
     />
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="mainContainer">
@@ -24,13 +32,25 @@
           <span class="line line3"></span>
         </div>
         <nav class="menuItems closeMenuItems">
-          <a href="#about">ABOUT</a>
-          <a href="#work">SELECTED WORK</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#contact">CONTACT & RESUME</a>
+          <a href="#about"> <i class="fa-solid fa-user"></i>ABOUT</a>
+          <a href="#work"><i class="fa-solid fa-laptop"></i>SELECTED WORK</a>
+          <a href="#skills"><i class="fa-solid fa-paintbrush"></i>SKILLS</a>
+          <a href="#contact"><i class="fa-solid fa-address-book"></i>CONTACT</a>
+          <a href="#resume"><i class="fa-solid fa-file"></i>RESUME</a>
         </nav>
       </div>
       <div class="sectionsContainer expanded">
+        <div class="linksContainer">
+          <a href="https://codepen.io/froinunez" target="_blank">
+            <i class="fa-brands fa-codepen"></i>
+            <!-- Codepen -->
+          </a>
+          <a href="https://www.linkedin.com/in/froinunez/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <!-- LinkedIn -->
+          </a>
+        </div>
+
         <section id="about" class="section about">
           <div class="intro">
             <img
@@ -40,13 +60,14 @@
               onmouseout="this.src='images/me_emoji_1.png';"
             />
             <h1>FROI NUNEZ</h1>
-            <h2>UX/UI DESIGNER | CREATIVE DEVELOPER</h2>
+            <h2>UX/UI DESIGNER | DEVELOPER</h2>
           </div>
           <p>
             <span class="hi">Hi </span><span>&#128075;</span> I'm Froi Nunez, a
-            UX/UI Designer and Creative Developer. My work aims to further
-            enhance the integration of design and technology, underscored by a
-            commitment to professionalism and clarity.<br /><br />
+            UX/UI Designer and Developer with over 7 years or experience. My
+            work aims to further enhance the integration of design and
+            technology, underscored by a commitment to professionalism and
+            clarity.<br /><br />
 
             Specializing in delivering innovative and engaging digital products
             that transcend conventional boundaries, I accomplish this with my
@@ -55,7 +76,7 @@
           </p>
 
           <p class="info">
-            I built my website with HTML5, CSS, LESS & JavaScript
+            I built this website with HTML5, CSS, LESS & JavaScript
           </p>
         </section>
         <section id="work" class="section work">
@@ -63,7 +84,7 @@
           <div class="projectContainer">
             <div class="project">
               <div class="projectInfo">
-                <h4>AIRBNB FEATURE</h4>
+                <h4>AIRBNB MOBILE FEATURE</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                   repellendus non ex hic voluptatibus ut natus nemo voluptatum
@@ -105,7 +126,7 @@
                 <img src="images/laptop_placeholder.png" alt="" />
               </div>
             </div>
-            <div class="project">
+            <!-- <div class="project">
               <div class="projectInfo">
                 <h4>3D PRODUCT VISUALIZATION</h4>
                 <p>
@@ -185,84 +206,113 @@
               <div class="projectImg">
                 <img src="images/laptop_placeholder.png" alt="" />
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section id="skills" class="section skills">
           <h3>SKILLS & EXPERIENCE</h3>
-          <div class="skillsItemsContainer">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-            />
+          <div class="skillsContainer">
+            <div class="skillsRow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+              />
+            </div>
+            <div class="skillsRow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/less/less-plain-wordmark.svg"
+              />
+            </div>
+            <div class="skillsRow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/less/less-plain-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original-wordmark.svg"
+              />
+            </div>
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg"
-            />
+            <div class="skillsRow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-plain-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg"
+              />
+            </div>
+            <div class="skillsRow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+              />
 
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-plain-wordmark.svg"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
-            />
-
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"
-            />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"
+              />
+            </div>
           </div>
         </section>
         <section id="contact" class="section contact">
-          <h3>CONTACT & RESUME</h3>
+          <h3>CONTACT</h3>
           <p>Feel free to send a message at:</p>
           <p class="accentColor">froinunezm@gmail.com</p>
+        </section>
+        <section id="resume" class="section resume">
+          <h3>RESUME</h3>
           <button>Download Resume</button>
         </section>
       </div>
+    </div>
+    <div class="footerNav">
+      <nav class="menuItems closeMenuItems">
+        <a href="#about">
+          <i class="fa-solid fa-user"></i>
+          ABOUT
+        </a>
+        <a href="#work">
+          <i class="fa-solid fa-laptop"></i>
+          SELECTED WORK
+        </a>
+        <a href="#skills">
+          <i class="fa-solid fa-paintbrush"></i>
+          SKILLS
+        </a>
+        <a href="#contact">
+          <i class="fa-solid fa-address-book"></i>
+          CONTACT
+        </a>
+        <a href="#resume">
+          <i class="fa-solid fa-file"></i>
+          RESUME
+        </a>
+      </nav>
     </div>
   </body>
   <script src="script.js"></script>
