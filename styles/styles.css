@@ -122,8 +122,12 @@ body .sectionsContainer .linksContainer a {
   padding: 12px;
 }
 body .sectionsContainer .linksContainer a i {
-  color: #eb5a49;
+  color: #1b1a1a;
   font-size: 40px;
+  transition: 0.3s;
+}
+body .sectionsContainer .linksContainer a i:hover {
+  color: #eb5a49;
 }
 body .sectionsContainer .section {
   display: flex;
@@ -132,16 +136,25 @@ body .sectionsContainer .section {
   flex-direction: column;
   margin: 52px 0;
 }
+body .sectionsContainer .section h3 {
+  margin: 0;
+}
 body .sectionsContainer .section.about .intro {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
+body .sectionsContainer .section.about .intro h1 {
+  font-size: 2em;
+}
+body .sectionsContainer .section.about .intro h1,
 body .sectionsContainer .section.about .intro h2 {
-  font-size: 20px;
+  margin: 0;
+}
+body .sectionsContainer .section.about .intro h2 {
+  font-size: 18px;
 }
 body .sectionsContainer .section.about .intro img {
-  max-width: 180px;
+  max-width: 116px;
 }
 body .sectionsContainer .section.about span.hi,
 body .sectionsContainer .section.about .info {
@@ -173,9 +186,11 @@ body .sectionsContainer .section.work .projectContainer .project .projectImg {
 body .sectionsContainer .section.work .projectContainer .project .projectImg img {
   width: 100%;
   cursor: pointer;
+  max-width: 684px;
 }
 body .sectionsContainer .section.work .projectContainer .project .projectImg img.iphone {
   max-width: 400px;
+  max-height: 400px;
 }
 body .sectionsContainer .section.skills {
   flex-direction: column;
@@ -282,6 +297,4 @@ body .footerNav nav a {
   body .footerNav nav.menuItems a:active {
     color: #eb5a49;
   }
-}
-@media (max-width: 667px) {
 }
