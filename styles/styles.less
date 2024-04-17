@@ -1,7 +1,6 @@
 @dark: #1b1a1a;
 @light: #faf9f6;
 @accent-color: #eb5a49;
-// @secondary-teal: #145e66;
 
 body {
   height: 100%;
@@ -130,8 +129,12 @@ body {
       a {
         padding: 12px;
         i {
-          color: @accent-color;
+          color: @dark;
           font-size: 40px;
+          transition: 0.3s;
+          &:hover {
+            color: @accent-color;
+          }
         }
       }
     }
@@ -141,16 +144,25 @@ body {
       justify-content: center;
       flex-direction: column;
       margin: 52px 0;
+      h3 {
+        margin: 0;
+      }
       &.about {
         .intro {
           display: flex;
-          flex-direction: column;
           align-items: center;
+          h1 {
+            font-size: 2em;
+          }
+          h1,
           h2 {
-            font-size: 20px;
+            margin: 0;
+          }
+          h2 {
+            font-size: 18px;
           }
           img {
-            max-width: 180px;
+            max-width: 116px;
           }
         }
         span.hi,
@@ -184,9 +196,11 @@ body {
               img {
                 width: 100%;
                 cursor: pointer;
-              }
-              img.iphone {
-                max-width: 400px;
+                max-width: 684px;
+                &.iphone {
+                  max-width: 400px;
+                  max-height: 400px;
+                }
               }
             }
           }
@@ -213,20 +227,6 @@ body {
             }
           }
         }
-        // .skillsItemsContainer {
-        //   display: grid;
-        //   grid-template-columns: 150px 150px 150px 150px;
-        //   grid-template-rows: 150px 150px 150px 150px;
-        //   grid-gap: 1rem;
-        //   width: 100%;
-        //   align-items: center;
-        //   justify-content: space-around;
-
-        //   img {
-        //     max-width: 200px;
-        //     height: 100px;
-        //   }
-        // }
       }
       &.resume {
         button {
@@ -308,7 +308,6 @@ body {
           transition: 0.3s;
           list-style-type: none;
           cursor: pointer;
-
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -330,15 +329,15 @@ body {
 }
 
 // Mobile view
-@media (max-width: 667px) {
-  // body {
-  //   .sideNav {
-  //     display: none;
-  //   }
-  //   .sectionsContainer {
-  //     &.expanded {
-  //       margin: 0 auto;
-  //     }
-  //   }
-  // }
-}
+// @media (max-width: 667px) {
+// body {
+//   .sideNav {
+//     display: none;
+//   }
+//   .sectionsContainer {
+//     &.expanded {
+//       margin: 0 auto;
+//     }
+//   }
+// }
+// }
