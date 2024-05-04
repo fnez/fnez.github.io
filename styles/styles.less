@@ -152,7 +152,7 @@ body {
           display: flex;
           align-items: center;
           h1 {
-            font-size: 2em;
+            font-size: 1.5em;
           }
           h1,
           h2 {
@@ -160,6 +160,7 @@ body {
           }
           h2 {
             font-size: 18px;
+            letter-spacing: 4px;
           }
           img {
             max-width: 116px;
@@ -193,13 +194,23 @@ body {
               justify-content: center;
               width: 70%;
               align-self: center;
-              img {
-                width: 100%;
-                cursor: pointer;
-                max-width: 684px;
-                &.iphone {
-                  max-width: 400px;
-                  max-height: 400px;
+              a {
+                text-decoration: none;
+                img {
+                  width: 100%;
+                  cursor: pointer;
+                  max-width: 684px;
+                  &.iphone {
+                    max-width: 400px;
+                    max-height: 400px;
+                  }
+                }
+                p.click_info {
+                  font-style: italic;
+                  color: #eb5a49;
+                  text-decoration: none;
+                  font-size: 12px;
+                  text-align: center;
                 }
               }
             }
@@ -278,8 +289,10 @@ body {
             .projectInfo,
             .projectImg {
               max-width: 100%;
-              img.iphone {
-                max-width: 300px;
+              a {
+                img.iphone {
+                  max-width: 300px;
+                }
               }
             }
           }

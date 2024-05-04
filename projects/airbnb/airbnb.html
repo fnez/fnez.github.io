@@ -36,140 +36,485 @@
     </nav>
     <div class="mainContainer">
       <section class="intro">
-        <h1>Problem</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h1>Solution</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <div class="highlights">
-          <ul>
-            <li>list item one</li>
-            <li>list item two</li>
-            <li>list item three</li>
-            <li>list item four</li>
-          </ul>
+        <div class="projectSection">
+          <h1>AirBnB Case Study</h1>
+
+          <div class="subSection videoContentContainer">
+            <div class="content">
+              <h2>Intro</h2>
+              <p>
+                As part of the Memorisely 2024's UX/UI Design cohort, our first
+                case-study to solve revolved around building an non-existent
+                feature for the AirBnb travel app. Specifically at the time,
+                AirBnb had no way to split group payments across their iOS
+                mobile app when using it for bookings. This lead to
+                inconvenience as well as having to use third party payment apps
+                amongst groups.
+              </p>
+              <p><b>Timeline</b> : 10 weeks</p>
+              <h2>Business Goal</h2>
+              <p>
+                The business goal was defined as :
+                <b
+                  >"Our goal is to enhance the user experience of booking
+                  accommodation as a group. Currently, only individuals can book
+                  accommodation and encourage their friends or colleagues to pay
+                  them back after payment is made. We'd like to make it easier
+                  for groups of people to split the cost of an Airbnb when
+                  traveling together"</b
+                >
+              </p>
+            </div>
+
+            <div>
+              <h5>Final Version</h5>
+              <video
+                controls="controls"
+                width="300"
+                height="600"
+                name="Video Name"
+              >
+                <source src="./videos/AirBnB_prototype_demo_2.mov" />
+              </video>
+            </div>
+          </div>
+
+          <h1>Design Brief</h1>
+        </div>
+        <div class="subSection">
+          <h2>User Segment</h2>
+          <p>
+            The user segment we'd like to target to improve the group booking
+            experience on Airbnb.com consists of travelers who plan trips
+            together in larger parties, such as families, friends, and
+            co-workers.
+          </p>
+          <p>
+            These users typically require accommodations that can comfortably
+            accommodate multiple guests and offer amenities suited for group
+            travel, such as shared living spaces, multiple bedrooms, and
+            family-friendly facilities. They often seek longer stays and may be
+            interested in exploring discounts or special offers for larger
+            parties.
+          </p>
+          <p>
+            By catering to the specific needs of this segment, we aim to enhance
+            their booking journey, increase user satisfaction, and tap into a
+            relatively untapped market to drive higher revenue and gain a
+            competitive advantage.
+          </p>
+        </div>
+        <div class="subSection">
+          <h2>Problem Statement</h2>
+          <p>
+            By understanding the business need we defined our problem statement
+            as :
+            <b>
+              Traveling professionals need an enhanced cost-splitting feature
+              and improved communication because they desire a more
+              user-friendly and integrated experience. However, the current
+              experience involves challenges in cost-splitting, communication
+              and inclusiveness during the booking process leading to user
+              frustration and inconvenience</b
+            >
+          </p>
+        </div>
+        <div class="subSection">
+          <h1>Solution</h1>
+          <p>
+            This was a great example of a real world opportunity that allowed me
+            to build a solution for an existing experience with abundant user
+            traffic. Things that came to mind upon initial brainstorming
+            sessions where :
+            <b
+              >user profile tagging, customizable payment splits, group chats
+              and payment tracking and reminders.</b
+            >
+            Based on the Qualitative research data we gathered from our survey
+            results. We decided to implement a solution that was based directly
+            on a user pain points. As a formal plan in order to implement the
+            design, the process became the following:
+          </p>
+          <div class="highlights">
+            <ul>
+              <li>
+                <h3>Discovery</h3>
+                <ol>
+                  <li>Qualitative Research</li>
+                  <li>Synthesis and Affinity Mapping</li>
+                  <li>Benchmarking & Competitor Analysis</li>
+                  <li>IA (Information Architecture)</li>
+                </ol>
+              </li>
+              <li>
+                <h3>Ideation</h3>
+                <ol>
+                  <li>Mind Map</li>
+                  <li>Cray 8's sketches</li>
+                  <li>User Flow</li>
+                </ol>
+              </li>
+              <li>
+                <h3>Design</h3>
+                <ol>
+                  <li>Lo-fidelity wireframes</li>
+                  <li>Color & Text Styles</li>
+                  <li>UI Components</li>
+                  <li>Hi-Fidelity Prototyping</li>
+                  <li>Usability Testing</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="projectSection">
         <h1>Discovery</h1>
-        <h2>Heuristic Evaluation</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>Competitive Analysis</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <div class="highlights">
-          <ul>
-            <li>list item one</li>
-            <li>list item two</li>
-            <li>list item three</li>
-            <li>list item four</li>
-          </ul>
+        <div class="subSection">
+          <h2>Qualitative Research</h2>
+          <p>
+            In order to get a good understanding of user pain points and needs,
+            we started off with Qualitative user interviews which was created
+            via
+            <b>Google forms</b> and sent to 14 experienced travelers. We asked
+            questions surrounding their general frustrations as well as
+            preferred payment splitting methods.
+          </p>
+          <p>
+            Following this, we made sure to synthesize these results via
+            <b>Dovetail</b>. This allowed us to organize it and advance our
+            design approach by creating an Affinity Map.
+          </p>
+        </div>
+        <div class="subSection">
+          <h2>Synthesis and Affinity Mapping</h2>
+          <img
+            class="projectImage"
+            src="./images/Discovery/affinity_map.png"
+            alt=""
+          />
+          <img
+            class="projectImage"
+            src="./images/Discovery/Survey_results_dovetail.png"
+            alt=""
+          />
+
+          <p>Highlights from affinity mapping based on user feedback :</p>
+
+          <div class="highlights">
+            <ul>
+              <li>
+                Users wanted a <b>clearer breakdown of prices and payment</b>
+              </li>
+              <li>
+                Users wished the <b>cost splitting ability was built-in</b>
+              </li>
+              <li>Users wanted <b>clear directions</b></li>
+              <li>
+                Users said it was <b>time consuming to switch between apps</b>
+              </li>
+              <li>
+                Users wanted to <b>clearly understand the price as a group</b>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="projectSection">
         <h1>Ideation</h1>
-        <h2>User Stories</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>User Flows</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>Sketches</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>Wireframes</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
+        <div class="subSection">
+          <h2>User Flows</h2>
+          <p>
+            While mapping out the existing content of AirBnb, we realized we had
+            to alter the structure to include another path users could take. The
+            best place to add this was within the individual listing page. Here
+            the users have the option to add other users before being prompted
+            to make their payment or continue as usual to the bookings page.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/User_flows/Existing_user_flow.png"
+            alt="existing_user_flow_graph"
+          />
+          <img
+            class="projectImage"
+            src="./images/User_flows/Improved_user_flow.png"
+            alt="improved_user_flow_graph"
+          />
+        </div>
+
+        <div class="subSection">
+          <h2>Lo-fidelity wireframes</h2>
+          <p>
+            Starting the wireframes allowed us to really start outlining the
+            placement of key elements such as buttons, menus, content areas, and
+            interactive parts without getting bogged down in visual design
+            details. This was the phase that showed us how our feature was going
+            to become a reality. By focusing on the skeletal framework of the
+            interface, wireframes help us in the following :
+          </p>
+          <div class="highlights">
+            <ul>
+              <li>Guide the visual design</li>
+              <li>Clarify concepts early on</li>
+              <li>Create quick iterations</li>
+              <li>Identify potential issues</li>
+              <li>Allow for collaboration</li>
+            </ul>
+          </div>
+          <img
+            class="projectImage"
+            src="./images/Wireframes/wire_frames.png"
+            alt="wireframes"
+          />
+        </div>
       </section>
       <section class="projectSection">
         <h1>Design</h1>
-        <h2>Style Guides</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>Components</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>UI Iterations</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
+        <div class="subSection">
+          <h2>Style Guides</h2>
 
-        <h2>High Fidelity Prototype</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
-        <h2>Usability Test</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          sapiente eaque obcaecati commodi facilis officia aperiam, ad amet,
-          iure incidunt aspernatur, sit adipisci minus vero aliquid? Explicabo
-          blanditiis aperiam quo.
-        </p>
+          <p>
+            By understanding the brand's defined visual identity, including
+            colors, typography, and any other design elements that reflect
+            AirBnB's personality; the next task was to create a color and font
+            style library in order to reuse them for consistency when building
+            out the design.
+          </p>
+        </div>
+        <div class="subSection">
+          <h3>Color Styles</h3>
+          <p>
+            As best practice we included a our primary, secondary, neutral as
+            well as feedback HEX color values in our swatches.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/Styles_and_fonts/Color_styles.png"
+            alt="color_styles"
+          />
+        </div>
+
+        <div class="subSection">
+          <h3>Font Styles</h3>
+          <p>
+            By continuing to inspect the app, we defined the font styles. This
+            included font-family, font-sizes, font-weights. All categorized
+            within heaging, body and button styles.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/Styles_and_fonts/Text_styles.png"
+            alt="text_styles"
+          />
+        </div>
+
+        <div class="subSection">
+          <h2>UI Components</h2>
+          <p>
+            By creating reusable UI components in Figma such as buttons, icons,
+            and navigation bars, we maintained visual coherence, streamlined
+            updates, and accelerated the development. This ensures a cohesive
+            and user-friendly experience while saving time.
+          </p>
+          <p>
+            Understanding auto-layout and component variants in Figma is crucial
+            for efficient and consistency. Auto-layout enables dynamic resizing
+            and alignment of UI elements, ensuring adaptability across different
+            screen sizes and content lengths.
+          </p>
+          <p>
+            Component variants allow for the creation of reusable elements with
+            multiple states/variations which facilitates quick iteration. Usage
+            of these features streamlines the design process and promotes
+            scalability.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/Styles_and_fonts/UI_components.png"
+            alt="text_styles"
+          />
+        </div>
+
+        <div class="subSection videoContentContainer">
+          <div class="content">
+            <h2>UI Iterations</h2>
+            <p>
+              UI iterations allow us to refine and improve the UI based on
+              feedback and testing. By iterating on ideas, we addressed and
+              identified usability issues around the behavior of the slider
+              component.
+            </p>
+            <p>
+              We originally had it go from point A to point B seamlessly.
+              However, we came to understand that users would need to stop at a
+              certain percentage and thus this change was made to accommodate
+              for this. We included several variants as a part of this component
+              to allow the user to do just that. This was the first version
+              which was later changed.
+            </p>
+          </div>
+          <div>
+            <h5>Initial Version</h5>
+            <video
+              controls="controls"
+              width="300"
+              height="600"
+              name="Video Name"
+            >
+              <source src="./videos/percentage_reset.mov" />
+            </video>
+          </div>
+          <div>
+            <h5>Component Experimentation</h5>
+            <video
+              controls="controls"
+              width="300"
+              height="600"
+              name="Video Name"
+            >
+              <source src="./videos/slide_test_01.mov" />
+            </video>
+          </div>
+        </div>
+
+        <div class="subSection videoContentContainer">
+          <div class="content">
+            <h2>High-Fidelity Prototype</h2>
+            <p>
+              The High-Fidelity Prototype is one of the more exciting parts of
+              the overall design process. It provided a realistic representation
+              of the final product, allowing us to visualize and interact with
+              the design as if it were developed. This enables thorough testing,
+              validation of design decisions, and effective communication of the
+              user experience, leading to more informed iterations and
+              ultimately, a better final product. Below are highlights of the
+              flow we introduced in the hi-fi prototype:
+            </p>
+            <div class="highlights">
+              <ul>
+                <li>Ability to <b>add new guests by email</b></li>
+                <li>Ability to <b>previous co-traveler from a list</b></li>
+                <li>
+                  Ability to <b>split the cost evenly or as a custom amount</b>
+                </li>
+                <li>
+                  Ability to
+                  <b>pay your portion in full or separate payments</b>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h5>Final Version</h5>
+            <video
+              controls="controls"
+              width="300"
+              height="600"
+              name="Video Name"
+            >
+              <source src="./videos/AirBnB_prototype_demo_2.mov" />
+            </video>
+          </div>
+        </div>
+
+        <div class="subSection">
+          <h2>Usability Test</h2>
+          <p>
+            <b>Takeaway:</b><br />
+            Some responses from the Usability report reiterated my understanding
+            of the best cases to document for developer-handoff. Below are some
+            of the user feedback from the usability tests we sent.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/Usability_test/report_01.png"
+            alt="usability_report"
+          />
+          <img
+            class="projectImage"
+            src="./images/Usability_test/report_02.png"
+            alt="usability_report"
+          />
+
+          <div class="highlights">
+            <ol>
+              <li>
+                Based on my initial understanding of Figma's limitation when
+                working with sliders, the smoothness of the scroll can only be
+                present if it is built in such a way where the user wouldn't
+                need to stop at a certain percentage.
+                <b
+                  >This was a great example of a developer handoff note allowing
+                  them to keep in mind the prototype's difference from the real
+                  world use-case and how the participant identified this.</b
+                >
+              </li>
+              <li>
+                <b
+                  >“Do other guests have control over the percentage split ?”</b
+                >
+                This was a great insight from a participant. Ideally a future
+                iteration of this would be to add a success screen/waiting
+                screen letting the user know, of the other guests approval for
+                the split before being able to finalize their payment.
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
+
       <section class="projectSection">
         <h1>Developer Handoff</h1>
         <p>
-          For the implementation phase, I made sure to include documentation
-          with the design assets, including detailed specifications, annotated
-          wireframes, and pixel-perfect mockups along with up to date CSS from
-          notes from within Figma
+          For the implementation phase, we understood the need to document the
+          design assets. Making sure to include detailed specifications and
+          annotated wireframes, as well as pixel-perfect mockups along with
+          updated CSS. Below are some highlighted notes that we would ensure to
+          communicate to the developers:
         </p>
+
+        <div class="highlights">
+          <ul>
+            <li>
+              <b> Payment Splitting Logic:</b> We determined that the total cost
+              is by default divided evenly amongst travelers within a group.
+              This default amount would change depending on how many people are
+              included.
+            </li>
+            <li>
+              <b>UI Components:</b> Specifications for our UI components
+              include, smooth scroll animation for the slider, reset button
+              which sets back the percentages to an even amount and user profile
+              components with outlined CSS
+            </li>
+            <li>
+              <b>Error Handling and Validation:</b> Some of the things that came
+              to mind with error states include, outlining validation rules for
+              scenarios like insufficient funds, incomplete payment information,
+              or attempts to split costs unevenly without consensus. Further, as
+              designers we understood how defining these errors should be
+              communicated to users via the dev phase.
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section class="projectSection">
         <h1>Reflection</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-          laudantium quasi eaque est architecto cum, dolor fugit dolore a eius
-          iure consequuntur voluptatum asperiores repellendus saepe modi
-          tempora. Eos, iusto.
+          This project highlighted the significance of collaboration and
+          communication within a design team, as well as the importance of
+          receiving and incorporating constructive feedback. Building the
+          feature reinforced the importance of attention to detail in UI design,
+          such as typography, color schemes, and iconography, to create a
+          visually appealing and cohesive UI while keeping in mind the brand
+          identity.
+        </p>
+        <p>
+          Overall, this case-study provided me with hands-on experience in the
+          entire design process, from ideation to execution, and highlighted the
+          importance of empathy, iteration, and collaboration.
         </p>
       </section>
     </div>
