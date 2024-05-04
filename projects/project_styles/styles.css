@@ -1,6 +1,7 @@
 body,
 nav {
   font-family: "IBM Plex Mono", monospace;
+  z-index: 1;
 }
 body {
   height: 100%;
@@ -98,16 +99,42 @@ body .mainContainer h1 {
 body .mainContainer .projectSection {
   margin: 68px 0;
 }
-body .mainContainer .projectSection h2 {
+body .mainContainer .projectSection .subSection {
+  text-align: center;
+  margin-bottom: 24px;
+}
+body .mainContainer .projectSection .subSection h2 {
   font-size: 24px;
+}
+body .mainContainer .projectSection .subSection img.projectImage {
+  max-width: 100%;
+}
+body .mainContainer p {
+  font-size: 16px;
 }
 body .mainContainer .highlights {
   background-color: #e8a8a1;
   border-radius: 24px;
   padding: 16px;
-  font-size: 18px;
+  font-size: 14px;
 }
-@media (min-width: 667px) {
+body .mainContainer .highlights ul li,
+body .mainContainer .highlights ol li {
+  margin-bottom: 14px;
+}
+@media (min-width: 961px) {
+  body .mainContainer .projectSection .subSection {
+    text-align: left;
+  }
+  body .mainContainer .projectSection .videoContentContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .mainContainer .projectSection .videoContentContainer .content {
+    max-width: 740px;
+  }
+}
+@media (min-width: 961px) and (min-width: 667px) {
   body nav {
     padding: 0;
   }

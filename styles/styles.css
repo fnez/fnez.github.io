@@ -144,7 +144,7 @@ body .sectionsContainer .section.about .intro {
   align-items: center;
 }
 body .sectionsContainer .section.about .intro h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 body .sectionsContainer .section.about .intro h1,
 body .sectionsContainer .section.about .intro h2 {
@@ -152,6 +152,7 @@ body .sectionsContainer .section.about .intro h2 {
 }
 body .sectionsContainer .section.about .intro h2 {
   font-size: 18px;
+  letter-spacing: 4px;
 }
 body .sectionsContainer .section.about .intro img {
   max-width: 116px;
@@ -183,14 +184,24 @@ body .sectionsContainer .section.work .projectContainer .project .projectImg {
   width: 70%;
   align-self: center;
 }
-body .sectionsContainer .section.work .projectContainer .project .projectImg img {
+body .sectionsContainer .section.work .projectContainer .project .projectImg a {
+  text-decoration: none;
+}
+body .sectionsContainer .section.work .projectContainer .project .projectImg a img {
   width: 100%;
   cursor: pointer;
   max-width: 684px;
 }
-body .sectionsContainer .section.work .projectContainer .project .projectImg img.iphone {
+body .sectionsContainer .section.work .projectContainer .project .projectImg a img.iphone {
   max-width: 400px;
   max-height: 400px;
+}
+body .sectionsContainer .section.work .projectContainer .project .projectImg a p.click_info {
+  font-style: italic;
+  color: #eb5a49;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
 }
 body .sectionsContainer .section.skills {
   flex-direction: column;
@@ -255,8 +266,8 @@ body .footerNav nav a {
   body .sectionsContainer .section.work .projectContainer .project .projectImg {
     max-width: 100%;
   }
-  body .sectionsContainer .section.work .projectContainer .project .projectInfo img.iphone,
-  body .sectionsContainer .section.work .projectContainer .project .projectImg img.iphone {
+  body .sectionsContainer .section.work .projectContainer .project .projectInfo a img.iphone,
+  body .sectionsContainer .section.work .projectContainer .project .projectImg a img.iphone {
     max-width: 300px;
   }
   body .footerNav {

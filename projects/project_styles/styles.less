@@ -8,6 +8,7 @@
 body,
 nav {
   font-family: "IBM Plex Mono", monospace;
+  z-index: 1;
 }
 
 body {
@@ -103,40 +104,76 @@ body {
     }
     .projectSection {
       margin: 68px 0;
-      h2 {
-        font-size: 24px;
+      .subSection {
+        text-align: center;
+        margin-bottom: 24px;
+        h2 {
+          font-size: 24px;
+        }
+        img.projectImage {
+          max-width: 100%;
+        }
       }
+    }
+    p {
+      font-size: 16px;
     }
     .highlights {
       background-color: @accent-color-light;
       border-radius: 24px;
       padding: 16px;
-      font-size: 18px;
+      font-size: 14px;
+      ul,
+      ol {
+        li {
+          margin-bottom: 14px;
+        }
+      }
     }
   }
 }
 
 // Note: as opposed to the main styles.less, this is approach is mobile first.
 //ex: min-width instead of max-width
-@media (min-width: 667px) {
+
+@media (min-width: 961px) {
   body {
-    nav {
-      padding: 0;
-      .container {
-        flex-direction: row;
-        .menu {
-          a {
-            font-size: 18px;
-            span {
-              width: 30px;
-              height: 30px;
-            }
+    .mainContainer {
+      .projectSection {
+        .subSection {
+          text-align: left;
+        }
+        .videoContentContainer {
+          display: flex;
+          justify-content: space-between;
+          .content {
+            max-width: 740px;
           }
         }
       }
     }
-    .mainContainer {
-      margin-top: 206px;
+  }
+
+  @media (min-width: 667px) {
+    body {
+      nav {
+        padding: 0;
+        .container {
+          flex-direction: row;
+          .menu {
+            a {
+              font-size: 18px;
+              span {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+      .mainContainer {
+        margin-top: 206px;
+      }
     }
   }
 }
