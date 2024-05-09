@@ -17,6 +17,7 @@ const toggleNav = () => {
   line3.classList.toggle("closed");
 };
 
+//scroll navigation
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (e) => {
     e.preventDefault();
