@@ -133,6 +133,9 @@ body .mainContainer .highlights ol li {
   body .mainContainer .projectSection .videoContentContainer .content {
     max-width: 740px;
   }
+  body .mainContainer .projectSection .videoContentContainer video {
+    margin-right: 16px;
+  }
 }
 @media (min-width: 961px) and (min-width: 667px) {
   body nav {

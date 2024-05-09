@@ -193,8 +193,7 @@ body .sectionsContainer .section.work .projectContainer .project .projectImg a i
   max-width: 684px;
 }
 body .sectionsContainer .section.work .projectContainer .project .projectImg a img.iphone {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 240px;
 }
 body .sectionsContainer .section.work .projectContainer .project .projectImg a p.click_info {
   font-style: italic;
