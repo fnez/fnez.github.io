@@ -3,6 +3,20 @@
 @accent-color: #eb5a49;
 @accent-color-light: #e8a8a1;
 
+.circle {
+  --circle-size: 40px;
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: @accent-color;
+  opacity: 70%;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
+  z-index: 2;
+}
+
 //mobile first approach
 
 body,
