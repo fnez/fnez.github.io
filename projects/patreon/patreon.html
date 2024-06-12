@@ -3,9 +3,537 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patreon</title>
+    <title>Patreon Case Study</title>
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../projects/project_styles/styles.css"
+    />
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>In progress. Please visit soon</h1>
+    <div class="circle"></div>
+    <nav>
+      <div class="container">
+        <a href="../../index.html" class="back">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="menu">
+          <a href="#discovery"><span>1</span>DISCOVERY</a>
+          <a href="#ideation"><span>2</span>IDEATION</a>
+          <a href="#design"><span>3</span>DESIGN</a>
+          <a href="#reflection"><span>5</span>REFLECTION</a>
+        </div>
+      </div>
+    </nav>
+    <div class="mainContainer">
+      <section class="intro">
+        <div class="projectSection">
+          <h1>Patreon Case Study</h1>
+
+          <div class="subSection videoContentContainer">
+            <div class="content">
+              <h2>Intro</h2>
+              <p>
+                As part of the Memorisely 2024's UX/UI Design cohort, our second
+                case-study to solve was to enhance the content creator
+                discoverability within Patreon's desktop app.
+              </p>
+              <p><b>Timeline</b> : 5 weeks</p>
+              <h2>Business Goal</h2>
+              <p>
+                The business goal was defined as :
+                <b
+                  >"The primary goal is to enhance the discoverability of
+                  creatives on Patreon, thereby increasing patron engagement and
+                  support for a wider range of creators. This improvement should
+                  lead to increased patronage, higher creator satisfaction, and
+                  overall growth in the platform's user base and revenue."</b
+                >
+              </p>
+            </div>
+
+            <div class="videoContainer">
+              <h5>Final Version</h5>
+              <video
+                controls="controls"
+                width="600"
+                height="400"
+                name="Video Name"
+              >
+                <source src="./videos/Patreon_prototype_demo.mov" />
+              </video>
+            </div>
+          </div>
+
+          <h1>Design Brief</h1>
+        </div>
+        <div class="subSection">
+          <h2>User Segment</h2>
+          <p>
+            The focus is on new and existing patrons who are interested in
+            exploring and supporting creatives across various genres but may not
+            have specific creators in mind.
+          </p>
+        </div>
+        <div class="subSection">
+          <h2>Task</h2>
+          <p>
+            Research, ideate and redesign the Patreon "Find creators" experience
+            to make it more engaging, personalized, and effective in connecting
+            patrons with creatives that match their interests.
+          </p>
+        </div>
+        <div class="subSection">
+          <h2>Problem Statement</h2>
+          <p>
+            By understanding the business need we defined our problem statement
+            as :
+            <b>
+              Currently, content creators on Patreon especially emerging and
+              niches, struggle with discoverability on the platform. This
+              challenge hinders their ability to grow their patron base and
+              achieve financial stability. On the other hand, patrons often find
+              it difficult to discover new and diverse creators that align with
+              their interests, which can lead to decreased engagement and
+              support.</b
+            >
+          </p>
+        </div>
+        <div class="subSection">
+          <h1>Solution</h1>
+          <p>
+            Based on understanding the business goal as well as the problem
+            statement, the following highlighted takeways guided us in the
+            execution and completion of the design:
+          </p>
+          <div class="highlights">
+            <ul>
+              <li>
+                <h3>Generative User Interviews</h3>
+                <ol>
+                  <li>
+                    Conduct interviews with individuals who are not current
+                    users of Patreon. The aim is to understand their content
+                    preferences, discoverability expectations, and perceived
+                    barriers to supporting creators on such platforms. This
+                    generative research will inform the development of a
+                    user-centric discovery experience.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>Ideation</h3>
+                <ol>
+                  <li>
+                    Leverage insights from these interviews to brainstorm
+                    innovative features that could improve the discovery process
+                    on Patreon.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>Prototype Development</h3>
+                <ol>
+                  <li>
+                    Create wireframes and prototypes for the new discovery
+                    interface, incorporating the ideas generated from the
+                    research and ideation phase.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>Usability Testing</h3>
+                <ol>
+                  <li>
+                    Test the prototype with a group of potential users to gather
+                    feedback and refine the design accordingly.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>Handover documentation</h3>
+                <ol>
+                  <li>
+                    Following testing, ensure your Figma file is prepped for a
+                    smooth handover to engineer.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="discovery" class="projectSection">
+        <h1>Discovery</h1>
+        <div class="subSection">
+          <h2>Synthesis and Affinity Mapping</h2>
+          <p>
+            As outlined previously, our first step was to conduct User
+            Interviews. After conducting 6 interviews, we synthesized the data
+            and categorized them within 3 trends/patterns in order to guide our
+            design:
+          </p>
+          <img
+            class="projectImage"
+            src="./images/interview_trends.png"
+            alt=""
+          />
+          <img
+            class="projectImage"
+            src="./images/Discovery/affinity_map.png"
+            alt=""
+          />
+
+          <p>Key learnings from our data synthesis where the following :</p>
+
+          <div class="highlights">
+            <ul>
+              <li>
+                <b>Quality:</b>Interviewees prioritize content quality and
+                credibility when choosing to support creators. Furthermore,
+                direct recommendations or referrals from creators influence
+                their support decisions on platforms like Patreon.
+              </li>
+              <li>
+                <b>Social media variety:</b> Other social media platforms like
+                Instagram, YouTube, and TikTok play significant roles in content
+                discovery.
+              </li>
+              <li>
+                <b>Diverse Content Consumption:</b> Interviewees engage with a
+                variety of content types, indicating the importance of catering
+                to different interests and preferences.
+              </li>
+              <li>
+                <b>Passive vs. Active Support:</b> While one interviewee prefers
+                passive consumption without direct engagement, others actively
+                supports creators through streaming, attending live events, and
+                purchasing merchandise.
+              </li>
+              <li>
+                <b>Discovery Challenges:</b> Despite the effectiveness of
+                algorithms and curated playlists, both interviewees express
+                challenges in discovering new creators, indicating a potential
+                gap in content discovery methods or platforms.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subSection">
+          <h2>Competitor Benchmarking</h2>
+          <p>
+            As we know, competitor benchmarking is a critical process for any
+            business aiming to gain a competitive edge in its market. For an app
+            focused on enhancing the discoverability of content creators,
+            understanding both direct and indirect competitors provides valuable
+            insights that inform strategic decisions, drive innovation, and
+            ensure the app meets and exceeds user expectations.
+          </p>
+
+          <img
+            class="projectImage"
+            src="./images/competitor_benchmark.png"
+            alt=""
+          />
+        </div>
+        <p>
+          Areas of opportunities we discovered and decided to focus on when
+          performing competitor benchmark:
+        </p>
+
+        <div class="highlights">
+          <ul>
+            <li>
+              <b>Category buttons</b> within the existing Creator section on the
+              landing page
+            </li>
+            <li>
+              <b>Additional filter integrations</b> such as trending weekly,
+              monthly or yearly
+            </li>
+            <li>
+              <b>Labels</b> within each user profile cards to identify
+              categories or similar artist
+            </li>
+            <li>
+              <b>Banner and profile pictures</b> within the cards allows uis to
+              have a better idea of what the creator does
+            </li>
+            <li>
+              <b>Sub-categories</b> within the main page as an exploration
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ideation" class="projectSection">
+        <h1>Ideation</h1>
+        <div class="subSection">
+          <h2>Rapid Ideation & Mind Mapping</h2>
+          <p>
+            We took the time to rough out design solutions with Crazy 8's
+            exercises as well as Mind Mapping. I personally really enjoy the way
+            mind mapping exercises as it allows us to further divide the
+            approach into "improve" aspects and or "add" to the feature at hand,
+            which is great for prioritizing as well as guiding the wifreframes
+            further.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/wireframes_mind_map.png"
+            alt="user_flow_graph"
+          />
+          <p>Ideas on what we could newly add included:</p>
+          <div class="highlights">
+            <ul>
+              <li>
+                <b>Top 10</b> creator spotlight
+                <ol>
+                  <li>Top 10 selling</li>
+                  <li>Top 10 staff picks</li>
+                  <li>Top 10 new creators this month</li>
+                </ol>
+              </li>
+              <li>
+                <b>Advanced search features</b> (filter, recommendations,
+                curated list, editor's picks, trending)
+              </li>
+              <li>
+                <b>Links</b> To creator pages as a banner.
+                <ol>
+                  <li>
+                    Brief page opens up in the same screen with creator's info
+                    (social links, profile pic, creator bio)
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <b>Creator cards</b> in order to show industry specialization.
+              </li>
+              <li>
+                <b>Filter dropdown</b> or persistent categorical filters to
+                quickly explore and find inspiration from creators without the
+                need to register.
+                <ol>
+                  <li>Rotating images based on the filter selection</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subSection">
+          <h2>User Flows</h2>
+          <p>
+            We decided to enhance the current landing page's discover feature.
+            This area seemed very interesting as we found it had a lot of
+            potential to make it more interactive and engaging to users.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/user_flow.png"
+            alt="existing_user_flow_graph"
+          />
+          <div class="highlights">
+            <ol>
+              <li>Select category button</li>
+              <ul>
+                <li>This allows to view the creators with a category filter</li>
+              </ul>
+              <li>Do you want to select a creator ?</li>
+              <ul>
+                <li>Views the creator pop-up</li>
+                <li>Image gallery and short bio</li>
+                <li>Includes links</li>
+              </ul>
+              <li>View Creator Profile</li>
+              <ul>
+                <li>View similar creators</li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+
+        <div class="subSection">
+          <h2>Lo-fidelity wireframes</h2>
+          <p>
+            The process to create the wireframes included making use of exisitng
+            button shapes, categories, icons and user profiles. Layouts and grid
+            of thumbnails helped as well as making sure we included notes of "to
+            do's" and list out components we would need for future iterations on
+            the Hi-fi version.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/wireframes.png"
+            alt="wireframes"
+          />
+        </div>
+      </section>
+
+      <section id="design" class="projectSection">
+        <h1>Design</h1>
+        <div class="subSection">
+          <h2>Style Guides</h2>
+          <p>
+            Ensuring consistency in our design approach is key and with this
+            mind we made sure to create a color and font library in order to
+            begin the design process.
+          </p>
+        </div>
+        <div class="subSection">
+          <h3>Color & Font Styles</h3>
+          <p>
+            Given Patreon's simplistic and limited approach to their visual
+            design. Establishing the visual components, icons, colors and fonts
+            to align with the brand's identity was a smooth process in this
+            case-study.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/font_color_styles.png"
+            alt="color_styles"
+          />
+        </div>
+
+        <div class="subSection">
+          <h2>UI Components</h2>
+          <p>
+            Some challenges/learning experiences faced during the component
+            creation phase was, the various prototypes we wanted to have and the
+            complexity with layers in ensuring they connected well when playing
+            the flow in Figma. Among those where the following interactions we
+            solved:
+          </p>
+          <div class="highlights">
+            <ul>
+              <li>A moving horizontal gallery with filter buttons synced</li>
+              <li>
+                A user profile pop-up component with an overlay and integrated
+                photo gallery
+              </li>
+              <li>
+                A dropdown with the ability to filter through image sections
+              </li>
+            </ul>
+          </div>
+          <p>Below are some screenshots of our design components:</p>
+          <img
+            class="projectImage"
+            src="./images/ui_components_1.png"
+            alt="text_styles"
+          />
+          <img
+            class="projectImage"
+            src="./images/ui_components_2.png"
+            alt="text_styles"
+          />
+          <img
+            class="projectImage"
+            src="./images/ui_components_3.png"
+            alt="text_styles"
+          />
+        </div>
+
+        <div class="subSection videoContentContainer">
+          <div class="content">
+            <h2>High-Fidelity Prototype</h2>
+            <p>
+              The feature for the Patreon app culminated in a user-centric
+              solution that effectively addresses key challenges. By thoroughly
+              understanding user needs and pain points, we developed intuitive
+              navigation, recommendations, and improved content categorization
+              from within the landing page to the individual creator's page.
+            </p>
+            <div>
+              <video
+                controls="controls"
+                width="600"
+                height="400"
+                name="Video Name"
+              >
+                <source src="./videos/Patreon_prototype_demo.mov" />
+              </video>
+            </div>
+            <p>Included in our design flow are the following:</p>
+            <div class="highlights">
+              <ul>
+                <li>
+                  <b>New tabs</b> to filter by categories within the creator
+                  gallery section
+                </li>
+                <li>
+                  <b>A user profile pop-up component</b> with more info on the
+                  selected creator
+                </li>
+                <li>
+                  <b>Two link</b>within this pop-up, one for the creator's page
+                  and another for Similar Creators page
+                </li>
+                <li>
+                  <b>An integrated gallery</b> navigation within this pop-up
+                  with additional pictures about the artist
+                </li>
+                <li>
+                  <b>A "Similar Creators"</b> page/section within the individial
+                  creator's page
+                </li>
+                <li>
+                  <b>Two discovery galleries</b>within this new page, one for
+                  similar creators and another "trending" creators gallery that
+                  allows to filter by "weekly", "monthly" or "yearly"
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subSection">
+          <h2>Usability Test</h2>
+          <p>
+            A big learning of course is the usability testing portion. When
+            conducting user interviews for the usability part we learned more
+            about what iterations we could be implemented while moving forward.
+            This would also lead to improvements by creating user experiements
+            via A/B Testing.
+          </p>
+          <img
+            class="projectImage"
+            src="./images/usability_table.png"
+            alt="usability_report"
+          />
+        </div>
+      </section>
+
+      <section id="reflection" class="projectSection">
+        <h1>Reflection</h1>
+        <p>
+          Through extensive user research and iterative design, we implemented
+          intuitive navigation, enhanced search capabilities, and
+          recommendations. These improvements facilitate easier discovery of new
+          and niche creators, increasing patron engagement and support. The
+          final design effectively meets the needs of both creators and patrons,
+          promoting higher satisfaction and contributing to the overall growth
+          and success of the Patreon platform.
+        </p>
+        <p>
+          I was incredibly proud I got the opportunity to work on this case
+          study. It was a rewarding experience that allowed me to dive into
+          unique challenges that both creators and followers may face. Working
+          on it felt like a meaningful cause as it aligned with my passion for
+          creating user-centered designs.
+        </p>
+        <p></p>
+      </section>
+    </div>
   </body>
+  <script src="../../script.js"></script>
 </html>
