@@ -359,16 +359,37 @@ body {
   }
 }
 
-// Mobile view
-// @media (max-width: 667px) {
-// body {
-//   .sideNav {
-//     display: none;
-//   }
-//   .sectionsContainer {
-//     &.expanded {
-//       margin: 0 auto;
-//     }
-//   }
-// }
-// }
+@media (max-width: 480px) {
+  body {
+    .sectionsContainer {
+      .linksContainer {
+        justify-content: center;
+      }
+      .section {
+        text-align: center;
+        &.about {
+          .intro {
+            h1 {
+              font-size: 32px;
+            }
+            h2 {
+              font-size: 14px;
+            }
+            img {
+              max-width: 80px;
+            }
+          }
+        }
+        &.skills {
+          .skillsContainer {
+            .skillsRow {
+              img {
+                max-width: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

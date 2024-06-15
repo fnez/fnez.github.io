@@ -320,3 +320,23 @@ body .footerNav nav a {
     color: #eb5a49;
   }
 }
+@media (max-width: 480px) {
+  body .sectionsContainer .linksContainer {
+    justify-content: center;
+  }
+  body .sectionsContainer .section {
+    text-align: center;
+  }
+  body .sectionsContainer .section.about .intro h1 {
+    font-size: 32px;
+  }
+  body .sectionsContainer .section.about .intro h2 {
+    font-size: 14px;
+  }
+  body .sectionsContainer .section.about .intro img {
+    max-width: 80px;
+  }
+  body .sectionsContainer .section.skills .skillsContainer .skillsRow img {
+    max-width: 80px;
+  }
+}
