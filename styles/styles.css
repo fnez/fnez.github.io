@@ -122,7 +122,7 @@ body .sideNav nav.menuItems a i {
 body .sectionsContainer {
   transition: 0.5s;
   margin-left: 22%;
-  padding: 0 50px;
+  padding: 0 200px;
 }
 body .sectionsContainer.expanded {
   margin-left: 100px;
@@ -165,7 +165,7 @@ body .sectionsContainer .section.about .intro h2 {
 }
 body .sectionsContainer .section.about .intro h2 {
   font-size: 18px;
-  letter-spacing: 4px;
+  letter-spacing: 0.05rem;
 }
 body .sectionsContainer .section.about .intro img {
   max-width: 116px;
@@ -211,7 +211,7 @@ body .sectionsContainer .section.work .projectContainer .project .projectImg a p
   font-style: italic;
   color: #eb5a49;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 body .sectionsContainer .section.skills {
