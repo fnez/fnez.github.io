@@ -21,7 +21,7 @@ body {
   line-height: 1.8;
 }
 body h4 {
-  font-size: 20px;
+  font-size: 24px;
 }
 body .mainContainer {
   display: flex;
@@ -198,7 +198,7 @@ body .sectionsContainer .section .project {
 body .sectionsContainer .section.work .projectContainer .project {
   display: flex;
   justify-content: center;
-  margin: 60px 0;
+  margin-bottom: 60px;
 }
 body .sectionsContainer .section.work .projectContainer .project .projectInfo {
   max-width: 30%;
