@@ -1,6 +1,7 @@
 @dark: #1b1a1a;
 @light: #faf9f6;
 @accent-color: #eb5a49;
+@light-gray-background: #ced5d8;
 
 .circle {
   --circle-size: 40px;
@@ -188,6 +189,31 @@ body {
           color: @accent-color;
         }
       }
+
+      .webProjects ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      .project {
+        background: @light-gray-background;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 8px;
+      }
+
       &.work {
         .projectContainer {
           .project {
@@ -203,6 +229,8 @@ body {
               ul li {
                 font-size: 14px;
                 color: #656565;
+                list-style-type: none;
+                text-align: left;
               }
             }
             .projectImg {
@@ -284,7 +312,6 @@ body {
   }
 }
 
-// Tablet view
 @media (max-width: 961px) {
   body {
     .sideNav {
@@ -299,7 +326,11 @@ body {
       &.expanded {
         margin: 0 auto;
       }
+
       .section.work {
+        .webProjects ul {
+          grid-template-columns: repeat(2, 1fr);
+        }
         .projectContainer {
           .project {
             flex-direction: column-reverse;
@@ -361,6 +392,9 @@ body {
 @media (max-width: 480px) {
   body {
     .sectionsContainer {
+      .webProjects ul {
+        grid-template-columns: 1fr;
+      }
       .linksContainer {
         justify-content: center;
       }
